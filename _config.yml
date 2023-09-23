@@ -77,11 +77,9 @@ img_cdn: "https://moneydory.github.io"
 
 # the avatar on sidebar, support local or CORS resources
 # avatar: "/commons/avatar.jpg"
-<<<<<<< HEAD
-avatar: "assets/img/favicons/logo.png"
-=======
+
 avatar: "/assets/img/favicons/logo.png"
->>>>>>> d7e1218c54f955fffb6fe9fe5b63684cc6ed3f64
+
 
 # boolean type, the global switch for TOC in posts.
 toc: true
