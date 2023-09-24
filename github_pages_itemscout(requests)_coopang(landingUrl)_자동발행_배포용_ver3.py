@@ -124,7 +124,7 @@ post_md_location = r"C:\Users\sundo\Desktop\workspace\moneydory.github.io\_posts
 product_name_lists = []  # 상품명
 product_discount_rate_lists = []  # 할인률과 원래가격
 product_price_lists = []  # 상품가격
-product_arrival_time_lists = []  # 도착예정시간
+product_arrival_time_lists = []  # 도착예정
 product_rating_star_lists = []  # star 평가: ex.3.5
 product_review_lists = []  # 상품리뷰 수
 product_link_lists = []  # 상품 구매 링크
@@ -529,7 +529,7 @@ def partner_coupang(keyword, _input_num=1):
     # product_name_lists = []  # 상품명
     # product_discount_rate_lists = []  # 할인률과 원래가격
     # product_price_lists = []  # 상품가격
-    # product_arrival_time_lists = []  # 도착예정시간
+    # product_arrival_time_lists = []  # 도착예정
     # product_rating_star_lists = []  # star 평가: ex.3.5
     # product_review_lists = []  # 상품리뷰 수
     # product_link_lists = []  # 상품 구매 링크
@@ -554,10 +554,10 @@ def partner_coupang(keyword, _input_num=1):
             product_price_lists.append(f"{product_price.text}원")
         else:
             product_price_lists.append('No data')
-        product_arrival_time = inner.select_one('div.price-wrap > div.delivery > span.arrival-info')  # 도착예정시간
+        product_arrival_time = inner.select_one('div.price-wrap > div.delivery > span.arrival-info')  # 도착예정
         if product_arrival_time is not None:
-            # print(product_arrival_time.text)
-            product_arrival_time_lists.append(product_arrival_time.text)
+           # print(product_arrival_time.text)
+            product_arrival_time_lists.append("상품페이지 참조") #
         else:
             product_arrival_time_lists.append('No data')
         product_rating_star = inner.select_one(
@@ -834,7 +834,7 @@ pin: true
 <br>
 - 할인율과 원래가격: {product_discount_rate_lists[item_index]}
 - 가격: {product_price_lists[item_index]}
-- 도착예정시간: {product_arrival_time_lists[item_index]}
+- 도착예정: {product_arrival_time_lists[item_index]}
 - star 평가: {product_rating_star_lists[item_index]}
 - 리뷰수: {product_review_lists[item_index]}
 <br>
