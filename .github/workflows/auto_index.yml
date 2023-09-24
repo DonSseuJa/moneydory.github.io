@@ -16,3 +16,10 @@ jobs:
     - name: Run indexing script
       run: |
         # 여기에 색인을 위한 스크립트나 명령어를 작성합니다.
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Bing Auto Index
+      run: |
+        curl -H "Ocp-Apim-Subscription-Key: ${{ secrets.BING_API_KEY }}" -X POST "https://api.bing.microsoft.com/v7.0/spy/submit?siteUrl=https://moneydory.github.io/&urlList=https://moneydory.github.io/new-post/"
