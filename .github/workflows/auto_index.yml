@@ -1,0 +1,18 @@
+name: Auto Indexing
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run indexing script
+      run: |
+        # 여기에 색인을 위한 스크립트나 명령어를 작성합니다.
