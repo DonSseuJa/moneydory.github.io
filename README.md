@@ -24,26 +24,29 @@
   </summary>
   <p>
 
-  - Dark / Light Theme Mode
-  - Localized UI language
-  - Pinned Posts on Home Page
-  - Hierarchical Categories
-  - Trending Tags
-  - Table of Contents
-  - Last Modified Date
-  - Syntax Highlighting
-  - Mathematical Expressions
-  - Mermaid Diagrams & Flowcharts
-  - Dark / Light Mode Images
-  - Embed Videos
-  - Disqus / Utterances / Giscus Comments
-  - Built-in Search
-  - Atom Feeds
-  - Google Analytics
-  - SEO & Performance Optimization
+
+
+- **상품 리뷰**: 다양한 쿠팡 상품에 대한 깊이 있는 리뷰를 제공합니다.
+- **할인 정보**: 쿠팡에서 진행하는 할인 이벤트와 특가 정보를 실시간으로 알려드립니다.
+- **사용자 가이드**: 쿠팡파트너스 프로그램을 효과적으로 활용하는 방법을 알려드립니다.
+- **SEO 최적화**: 검색 엔진 최적화를 통해 더 많은 독자에게 노출됩니다.
+
 
   </p>
 </details>
+
+## Usage
+
+1. **블로그 방문**: [여기](https://moneydory.github.io)를 클릭하여 블로그를 방문할 수 있습니다.
+2. **카테고리 선택**: 원하는 카테고리를 선택하여 관련 글을 볼 수 있습니다.
+3. **검색 기능**: 특정 상품이나 정보를 찾고 싶다면 검색 기능을 사용하세요.
+4. **댓글 남기기**: 글 하단에 댓글을 남겨 질문이나 의견을 공유할 수 있습니다.
+
+### 로컬에서 실행하기
+
+1. 이 GitHub 저장소를 클론합니다.
+2. 터미널에서 `jekyll serve` 명령을 실행하여 로컬에서 블로그를 미리 볼 수 있습니다.
+
 
 ## Documentation
 

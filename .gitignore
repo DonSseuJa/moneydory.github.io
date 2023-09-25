@@ -21,6 +21,11 @@ package-lock.json
 # Misc
 # assets/js/dist 
 
+# Jekyll generated files
+_site/
+.jekyll-cache/
+
+
 # TS
 <<<<<<< HEAD
 post_sample
