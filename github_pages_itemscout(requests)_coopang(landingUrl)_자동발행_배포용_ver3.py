@@ -33,6 +33,7 @@ from urllib.parse import urljoin
 from fake_useragent import UserAgent
 from urllib import parse
 from urllib.parse import urlparse, parse_qs
+from tqdm import tqdm
 
 osName = platform.system()  # window 인지 mac 인지 알아내기 위한
 # print(osName)
