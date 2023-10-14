@@ -49,6 +49,10 @@ jobs:
       # This step is optional and can be removed if not needed
       - name: Upload artifact
         uses: actions/upload-artifact@v2
+        with:
+            name: website-artifact  # 원하는 아티팩트 이름
+            path: ./_site  # 업로드할 파일 또는 디렉터리의 경로
+
 
   # Deployment job
   deploy:
@@ -61,6 +65,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: peaceiris/actions-gh-pages@v3  # Updated to use a well-known action for GitHub Pages deployment
-
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # 이 줄을 추가
+          publish_dir: ./_site  # 이 줄을 추가
 
 

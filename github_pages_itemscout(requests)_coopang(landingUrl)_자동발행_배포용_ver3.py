@@ -841,7 +841,7 @@ pin: true
 - 리뷰수: {product_review_lists[item_index]}
 <br>
 <br>
-[**[CLICK]**]({product_short_url_lists[item_index]}){{: .{align2}}}
+[**[💖제품보러가기🚀🚀]**]({product_short_url_lists[item_index]}){{: .{align2}}}
 <br>
 <br>
 
