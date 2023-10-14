@@ -65,7 +65,7 @@ jobs:
         id: deployment
         uses: peaceiris/actions-gh-pages@v3  # No change
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # 이 줄을 추가
+          github_token: ${{ secrets.MY_GITHUB_TOKEN }}  # 이 줄을 추가
           publish_dir: "_site${{ steps.pages.outputs.base_path }}"  # 이 줄을 추가
 
 
