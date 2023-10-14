@@ -67,4 +67,3 @@ jobs:
         with:
           deploy_key: ${{ secrets.DEPLOY_KEY }}  # 이 줄을 추가
           publish_dir: ./_site  # 이 줄은 그대로 유지
-
