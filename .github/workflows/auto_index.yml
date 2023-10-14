@@ -6,7 +6,7 @@ on:
       - main  # main 브랜치에만 이 워크플로우를 적용
 
 jobs:
-  build:
+  bing_auto_index:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
