@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from tqdm import tqdm
 import subprocess
 import datetime
 import platform
