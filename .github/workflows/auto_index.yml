@@ -4,15 +4,14 @@ on:
   push:
     branches:
       - main
-      - new-branch-name
+      - new-branch-name  # 실제 브랜치 이름으로 수정
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
-
+      uses: actions/checkout@v4  # 버전을 v4로 수정
 
     - name: Run indexing script
       run: |
@@ -21,6 +20,9 @@ jobs:
   bing_index:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout code  # 추가된 단계
+      uses: actions/checkout@v4  # 버전을 v4로 수정
+
     - name: Bing Auto Index
       run: |
         curl -H "Ocp-Apim-Subscription-Key: ${{ secrets.BING_API_KEY }}" -X POST "https://api.bing.microsoft.com/v7.0/spy/submit?siteUrl=https://moneydory.github.io/&urlList=https://moneydory.github.io/new-post/"
