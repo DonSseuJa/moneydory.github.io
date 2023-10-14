@@ -54,6 +54,7 @@ jobs:
         with:
           path: "_site${{ steps.pages.outputs.base_path }}"
 
+  # Deployment job
   deploy:
     environment:
       name: github-pages
@@ -63,9 +64,9 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: peaceiris/actions-gh-pages@v3  # No change
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.MY_GITHUB_TOKEN }}  # 이 줄을 추가
-          publish_dir: "_site${{ steps.pages.outputs.base_path }}"  # 이 줄을 추가
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          publish_dir: ./_site
 
 
