@@ -21,9 +21,51 @@ package-lock.json
 # Misc
 # assets/js/dist 
 
+# Jekyll generated files
+_site/
+.jekyll-cache/
+
+
 # TS
-<<<<<<< HEAD
+
 post_sample
-=======
-post_sample
->>>>>>> d7e1218c54f955fffb6fe9fe5b63684cc6ed3f64
+
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.pyz
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Pycharm
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/

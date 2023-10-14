@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from tqdm import tqdm
 import subprocess
 import datetime
 import platform
@@ -33,6 +34,7 @@ from urllib.parse import urljoin
 from fake_useragent import UserAgent
 from urllib import parse
 from urllib.parse import urlparse, parse_qs
+from tqdm import tqdm
 
 osName = platform.system()  # window 인지 mac 인지 알아내기 위한
 # print(osName)
@@ -839,7 +841,7 @@ pin: true
 - 리뷰수: {product_review_lists[item_index]}
 <br>
 <br>
-[**[CLICK]**]({product_short_url_lists[item_index]}){{: .{align2}}}
+[**[💖제품보러가기🚀🚀]**]({product_short_url_lists[item_index]}){{: .{align2}}}
 <br>
 <br>
 
