@@ -64,9 +64,9 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: peaceiris/actions-gh-pages@v3  # Updated to use a well-known action for GitHub Pages deployment
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # 이 줄을 추가
-          publish_dir: ./_site  # 이 줄을 추가
+          deploy_key: ${{ secrets.DEPLOY_KEY }}  # Update this line
+          publish_dir: ./_site
 
 

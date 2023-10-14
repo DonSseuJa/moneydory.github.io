@@ -3,15 +3,14 @@ name: Auto Indexing
 on:
   push:
     branches:
-      - main
-      - new-branch-name  # 실제 브랜치 이름으로 수정
+      - main  # main 브랜치에만 이 워크플로우를 적용
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4  # 버전을 v4로 수정
+      uses: actions/checkout@v3  # 버전을 v3로 수정
 
     - name: Run indexing script
       run: |
@@ -21,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code  # 추가된 단계
-      uses: actions/checkout@v4  # 버전을 v4로 수정
+      uses: actions/checkout@v3  # 버전을 v3로 수정
 
     - name: Bing Auto Index
       run: |
