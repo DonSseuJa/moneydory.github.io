@@ -22,7 +22,7 @@ jobs:
 #    runs-on: ubuntu-latest
 #    steps:
 #    - name: Checkout code
-#      uses: actions/checkout@v4  # 버전을 v4로 수정
+#      uses: actions/checkout@v2  # 버전을 v2로 수정
 #
 #    - name: Bing Auto Index
 #      run: |
