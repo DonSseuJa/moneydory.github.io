@@ -6,6 +6,7 @@ gemspec
 
 # Specify the Jekyll version for GitHub Pages
 gem "jekyll", "~> 4.3"
+gem "jekyll-sitemap"
 
 group :test do
   gem "html-proofer", "~> 3.18"
