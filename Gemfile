@@ -4,6 +4,9 @@ source "https://rubygems.org"
 
 gemspec
 
+# Specify the Jekyll version for GitHub Pages
+gem "jekyll", "~> 4.3"
+
 group :test do
   gem "html-proofer", "~> 3.18"
 end
