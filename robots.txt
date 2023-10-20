@@ -6,3 +6,7 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+Disallow: /norobots/
+
+Sitemap: https://moneydory.github.io/sitemap.xml
+
